@@ -26,11 +26,11 @@ The STM32 microcontroller (UP) is integrated with an EEPROM breakout board featu
 
 https://github.com/user-attachments/assets/a4a187ec-c064-4522-b218-08a3be2f1886
 
-When press the "center" button of the joystick, read the temperature register value from the sensor over I2C and display it together with its hexadecimal representation on the LCD screen (in degree Celsius), known as the "Sampled data". Further ‘centre’ button presses result in the temperature register data being read again and stored in the packet, meaning that the temperature will not update in real time.
+When press the "center" button of the joystick, read the temperature register value from the sensor over I2C and display it together with its hexadecimal representation on the LCD screen (in degree Celsius), known as the "Sampled data". Further ‘centre’ button presses result in the temperature register data being read again and stored in the packet, meaning that the temperature will not update in real time.  
 <br/>
-When press the "left" button of the joystick, the LCD screen will display the temperature value read from the EEPROM. At first, it should be 0 as nothing is being stored in the EEPROM. It is known as the "Memory data". It is worthnotcing that both reading and writing of the EEPROM uses EEPROM's page mode due to limited amount of data are designed to be accessed and modified at in a single transaction.
+When press the "left" button of the joystick, the LCD screen will display the temperature value read from the EEPROM. At first, it should be 0 as nothing is being stored in the EEPROM. It is known as the "Memory data". It is worthnotcing that both reading and writing of the EEPROM uses EEPROM's page mode due to limited amount of data are designed to be accessed and modified at in a single transaction.  
 <br/>
-When press the "right" button on the joystickm, the entire 82-byte packet will be saved to the EEPROM. This includes the destination (4 bytes), source (4 bytes), length (2 bytes), payload (70 bytes with temperature data in the last 2 bytes and zero-padding), and a 2-byte 1’s complement checksum for integrity. The packet is stored sequentially at predefined EEPROM addresses. After the data is stored in the EEPROM, a further "left" press of the joystick will result in the stored termperature value being displayed as "Memory data".
+When press the "right" button on the joystickm, the entire 82-byte packet will be saved to the EEPROM. This includes the destination (4 bytes), source (4 bytes), length (2 bytes), payload (70 bytes with temperature data in the last 2 bytes and zero-padding), and a 2-byte 1’s complement checksum for integrity. The packet is stored sequentially at predefined EEPROM addresses. After the data is stored in the EEPROM, a further "left" press of the joystick will result in the stored termperature value being displayed as "Memory data".  
 <br/>
 <br/>  
 - **Packet dispaly, checksum and backup storage**
