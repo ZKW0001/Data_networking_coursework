@@ -13,6 +13,7 @@ The structure of the packet to be stored in the EEPROM is given as below:
 | **checksum**   | 2                | 1's complement checksum (IPv4 style) calculated over the `dest`, `src`, `length`, and `payload` fields. |  
 <br/>
 <br/>
+
 ## Microcontroller overview
 
 https://github.com/user-attachments/assets/20254749-130f-4a1a-a7d0-a68d8d5f2f42
@@ -21,6 +22,7 @@ The STM32 microcontroller (UP) is integrated with an EEPROM breakout board featu
 
 <br/>
 <br/>
+
 ## Example output
 
 - **Read and write to the EEPROM**
