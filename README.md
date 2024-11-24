@@ -18,6 +18,7 @@ The structure of the packet to be stored in the EEPROM is given as below:
 https://github.com/user-attachments/assets/20254749-130f-4a1a-a7d0-a68d8d5f2f42
 
 The STM32 microcontroller (UP) is integrated with an EEPROM breakout board featuring two EEPROMs (BOTTOM). Two protocols manage the read and write processes: the I2C protocol, used for communication with the LM75BD temperature sensor and the 24LC32AF EEPROM, and the SPI protocol, used to interface with the C12832 LCD screen on the microcontroller for displaying results.
+<br/>
 
 ## Example output
 
