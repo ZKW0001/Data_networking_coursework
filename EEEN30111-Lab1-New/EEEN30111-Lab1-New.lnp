@@ -1,0 +1,21 @@
+--cpu=Cortex-M4.fp.sp
+"eeen30111-lab1-new\startup_stm32f401xe.o"
+"eeen30111-lab1-new\gpio.o"
+"eeen30111-lab1-new\spi.o"
+"eeen30111-lab1-new\stm32f4xx_it.o"
+"eeen30111-lab1-new\lcd.o"
+"eeen30111-lab1-new\i2c.o"
+"eeen30111-lab1-new\main.o"
+"eeen30111-lab1-new\stm32f4xx_ll_gpio.o"
+"eeen30111-lab1-new\stm32f4xx_ll_i2c.o"
+"eeen30111-lab1-new\stm32f4xx_ll_dma.o"
+"eeen30111-lab1-new\stm32f4xx_ll_rcc.o"
+"eeen30111-lab1-new\stm32f4xx_ll_utils.o"
+"eeen30111-lab1-new\stm32f4xx_ll_exti.o"
+"eeen30111-lab1-new\stm32f4xx_ll_spi.o"
+"eeen30111-lab1-new\stm32f4xx_ll_usart.o"
+"eeen30111-lab1-new\system_stm32f4xx.o"
+--strict --scatter "EEEN30111-Lab1-New\EEEN30111-Lab1-New.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "EEEN30111-Lab1-New.map" -o EEEN30111-Lab1-New\EEEN30111-Lab1-New.axf
